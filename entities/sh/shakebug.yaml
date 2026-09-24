@@ -38,11 +38,13 @@ offers:
     economics:
       benefits:
         - benefit_id: ben_01
-          description: The full Shakebug Premium plan for $20 per month for the first 12 months, instead of the standard Premium rate of $125 per month.
+          description: The same Premium plan, no feature cuts, for your first 12 months.
           kind: other
       consideration:
-        kind: variable
-        description: The startup pays $20 per month for Premium for 12 months; after year one, billing moves to the standard Premium rate of $125 per month unless the startup downgrades or cancels.
+        kind: fixed
+        amount:
+          currency: USD
+          minor_units: 2000
     eligibility:
       rule:
         kind: all
