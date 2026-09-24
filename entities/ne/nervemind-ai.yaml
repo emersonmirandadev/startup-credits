@@ -64,7 +64,6 @@ offers:
       access_operator_entity_id: ent_01m16c6h29v99bcpzp84pfr599
     access:
       availability: public
-      instructions: Submit the Startup Program application form, including an accelerator or partner program affiliation. NerveMind may request company documents; approved companies receive a unique NMSTARTUP promotion code by email to redeem at checkout.
       method: form
       url: https://nervemindos.com/startup-program/apply
     terms_url: https://nervemindos.com/startup-program
