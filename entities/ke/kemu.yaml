@@ -38,15 +38,14 @@ offers:
     economics:
       benefits:
         - benefit_id: ben_01
-          description: Kemu Teams access for up to 15 team members at no charge for 12 months.
+          description: Kemu Teams for 12 months at no charge.
           kind: free-service
-          service: Kemu Teams for up to 15 team members
+          service: Kemu Teams
           duration:
             kind: exact
             value: P1Y
         - benefit_id: ben_02
-          applies_to: Kemu standard pricing after the free 12 months
-          description: 25% off standard pricing for the 12 months after the free period.
+          description: At the end of 12 months, you can transition to standard pricing with a 25% discount for the following 12 months.
           kind: discount
           percentage:
             kind: exact
@@ -55,11 +54,11 @@ offers:
             kind: exact
             value: P1Y
         - benefit_id: ben_03
-          description: Enterprise features, priority support with a dedicated technical account manager, personalized onboarding, co-marketing, and quarterly architecture reviews.
+          description: Exclusive access to Enterprise features, dedicated technical support, and co-marketing opportunities.
           kind: other
       consideration:
         kind: variable
-        description: No charge for the first 12 months; after that the startup can move to standard pricing with a 25% discount for the following 12 months.
+        description: The startup receives Kemu Teams for 12 months at no charge, and at the end of 12 months can transition to standard pricing with a 25% discount for the following 12 months.
     eligibility:
       rule:
         kind: all
@@ -93,8 +92,7 @@ offers:
       access_operator_entity_id: ent_01m16c6h2bxgvybbgydey9s4q0
     access:
       availability: public
-      instructions: Submit the application on the Kemu for Startups page; most applications are reviewed within 5 business days. Affiliation with an approved accelerator, incubator, VC, or university program is preferred but not required.
-      method: form
+      method: contact
       url: https://kemu.io/startups
     source_ids:
       - src_20bbf4ccf873913cd1eed90022a76c5ded2b0586bcc911d8ed221532fd33b6bc
