@@ -10,7 +10,8 @@ entity:
       valid_from: 2026-08-29T00:00:00Z
   category: observability
 profile:
-  description: Shakebug provides crash reporting, session journeys, product analytics, and bug reporting for mobile and web applications.
+  summary: Shakebug provides crash reporting, bug capture, session and user journey tracking, and product analytics for iOS, Android, Flutter, React Native, and web apps.
+  description: Shakebug provides crash reporting, bug capture, session and user journey tracking, and product analytics for mobile and web apps.
   links:
     site: https://www.shakebug.com
 sources:
@@ -21,7 +22,7 @@ programs:
     program_slug: shakebug-startup-plan
     program_slug_aliases: []
     title: Shakebug Startup Plan
-    summary: Shakebug offers qualifying early-stage teams its Premium plan for USD 20 per month during their first 12 months.
+    summary: The Shakebug Startup Plan gives qualifying early-stage teams the full Premium plan for $20 per month during their first 12 months.
     source_ids:
       - src_b900d049b32449064754656b7ca74e84636c730ea7c68ab1b2b451f71d1fd4fa
 offers:
@@ -29,40 +30,53 @@ offers:
     program_id: prg_01m16c6h28ce3pbk0kzne145t0
     offer_slug: premium-for-20-usd-per-month-first-year
     offer_slug_aliases: []
-    title: Premium for USD 20 per month for 12 months
-    summary: Eligible startups receive the full Shakebug Premium plan for USD 20 per month for 12 months instead of the published USD 125 monthly price.
+    title: Shakebug Premium for $20 per month for 12 months
+    summary: Approved startups get the full Shakebug Premium plan for $20 per month for their first 12 months instead of the standard $125 per month.
     lifecycle:
       status: active
       effective_from: 2026-08-29T00:00:00Z
     economics:
-      consideration:
-        kind: fixed
-        amount:
-          currency: USD
-          minor_units: 2000
       benefits:
         - benefit_id: ben_01
-          applies_to: Shakebug Premium
-          description: Access to the full Premium plan for USD 20 per month instead of USD 125 per month during the first year.
-          kind: discount
-          percentage:
-            kind: exact
-            basis_points: 8400
-          duration:
-            kind: exact
-            value: P1Y
+          description: The full Shakebug Premium plan for $20 per month for the first 12 months, instead of the standard Premium rate of $125 per month.
+          kind: other
+      consideration:
+        kind: variable
+        description: The startup pays $20 per month for Premium for 12 months; after year one, billing moves to the standard Premium rate of $125 per month unless the startup downgrades or cancels.
     eligibility:
       rule:
-        criterion_id: cri_01
-        kind: manual
-        reason: vendor-discretion
-        statement: The company must have been founded within five years, operate independently, have 15 or fewer team members, and be actively building a real product.
+        kind: all
+        rules:
+          - criterion_id: cri_01
+            fact: company.age_months
+            kind: predicate
+            operator: lte
+            statement: The company was founded in the last 5 years.
+            value:
+              type: number
+              value: 60
+          - criterion_id: cri_02
+            kind: manual
+            reason: not-machine-evaluable
+            statement: The company operates independently and is not a subsidiary or internal team of a larger company.
+          - criterion_id: cri_03
+            fact: company.employee_count
+            kind: predicate
+            operator: lte
+            statement: The team has 15 people or fewer.
+            value:
+              type: number
+              value: 15
+          - criterion_id: cri_04
+            kind: manual
+            reason: not-machine-evaluable
+            statement: The company is actively building a real product, from pre-launch through early revenue, not a side project.
     roles:
       terms_authority_entity_id: ent_01m16c6h0z57w6b1chbvx7ftev
       access_operator_entity_id: ent_01m16c6h0z57w6b1chbvx7ftev
     access:
       availability: public
-      instructions: Complete the Startup Plan application. Shakebug says applications are reviewed within two to three business days and no credit card is required to apply.
+      instructions: Submit the Startup Plan application on the Shakebug startups page. Applications are reviewed within 2 to 3 business days and approved teams receive a discount code by email; no credit card is needed to apply.
       method: form
       url: https://www.shakebug.com/startups
     terms_url: https://www.shakebug.com/startups
