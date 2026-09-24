@@ -41,9 +41,9 @@ offers:
     economics:
       benefits:
         - benefit_id: ben_01
-          description: 6 months free on the NormaTrack Growth plan, which is listed at 349 euros per month; no credit card required.
+          description: 6 months free on the Growth plan, no credit card required.
           kind: free-service
-          service: NormaTrack Growth plan
+          service: Growth plan
           duration:
             kind: exact
             value: P6M
@@ -73,7 +73,6 @@ offers:
       instructions: Use the startup program Apply now link on the NormaTrack pricing page, which opens the request form; no credit card is required.
       method: form
       url: https://www.normatrack.com/request-demo
-    terms_url: https://www.normatrack.com/pricing
     source_ids:
       - src_3182b0a7286b280b565cdfbdbf87637254bdfd74f09435397378531a7eb1c257
       - src_bc398f390f88f33d6e3320ff9073b736993aa1afb048951329b56060ddae9dbd
